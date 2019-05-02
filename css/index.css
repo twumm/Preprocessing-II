@@ -283,6 +283,11 @@ header nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -292,9 +297,20 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
 }
 .home .content-pick .destination .btn > button {
   padding: 1rem 5rem;
@@ -303,6 +319,13 @@ header nav a {
   color: #FFFFFF;
   border: none;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn > button {
+    padding: 1rem 12rem;
+    background: #17A2B8;
+  }
 }
