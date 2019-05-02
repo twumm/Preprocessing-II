@@ -14,3 +14,29 @@
     background: @button-bg;
   }
 }
+
+.nav-item-animation() {
+  position: absolute;
+  left: 0px;
+  width: 100px;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.nav-item-animation-before() {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+.nav-item-animation-after() {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+.nav-item-animation-hover() {
+  color: @teal;
+  transition: .2s ease-in;
+}
