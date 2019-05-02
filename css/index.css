@@ -325,7 +325,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn > button {
-    padding: 1rem 12rem;
+    padding: 1rem 8rem;
     background: #17A2B8;
   }
 }
