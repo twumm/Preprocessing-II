@@ -351,3 +351,61 @@ nav .top .nav-items a:hover {
     background: #17A2B8;
   }
 }
+.home .form {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  padding-bottom: 30px;
+}
+.home .form .main-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 500px) {
+  .home .form .main-form {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+.home .form .main-form label {
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .form .main-form label {
+    padding-bottom: 20px;
+  }
+}
+.home .form .main-form #select-package {
+  width: 300px;
+}
+@media (max-width: 500px) {
+  .home .form .main-form #select-package {
+    margin-bottom: 20px;
+  }
+}
+.home .form .main-form input[type=select] {
+  border: 2px solid #ccc;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  .home .form .main-form input[type=select] {
+    padding-bottom: 20px;
+  }
+}
+.home .form .main-form input[type=submit] {
+  padding: 1rem 5rem;
+  background: #008080;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .form .main-form input[type=submit] {
+    padding: 1rem 8rem;
+    background: #17A2B8;
+  }
+}
