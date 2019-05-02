@@ -1,44 +1,51 @@
 // Navigation Styles here
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 70px;
-  margin: 0 -70px;
+nav {
+  width: 100%;
   border-bottom: 2px dashed @navigation-border;
+  padding: 15px 0 10px 0;
 
   @media @mobile {
-    flex-flow: column;
-    align-items: center;
-    padding: 5px 0;
-    margin: 0 -30px;
+    width: auto;
   }
 
-  h1 {
-    @media @mobile {
-      font-size: 3rem;
-      margin: 5px 0;
-    }
-  }
-
-  nav {
+  .top {
     display: flex;
-    align-items: center;
-
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+    align-items: baseline;
+    
     @media @mobile {
-      padding-top: 5px;
+      flex-flow: column;
+      align-items: center;
+      width: auto;
     }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-      font-size: 1.5rem;
-      padding-right: 40px;
+  
+    h1 {
       @media @mobile {
-        padding-right: 30px;
+        font-size: 3rem;
+        margin: 5px 0;
       }
-
-      &:hover {
-        .nav-item-animation-hover();
+    }
+  
+    .nav-items {
+      display: flex;
+      align-items: center;
+  
+      @media @mobile {
+        padding: 5px 0 0 20px;
+        justify-content: space-between;
+      }
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.5rem;
+        padding-right: 40px;
+  
+        &:hover {
+          .nav-item-animation-hover();
+        }
       }
     }
   }

@@ -168,48 +168,53 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 70px;
-  margin: 0 -70px;
+nav {
+  width: 100%;
   border-bottom: 2px dashed #C0C0C0;
+  padding: 15px 0 10px 0;
 }
 @media (max-width: 500px) {
-  header {
+  nav {
+    width: auto;
+  }
+}
+nav .top {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  align-items: baseline;
+}
+@media (max-width: 500px) {
+  nav .top {
     flex-flow: column;
     align-items: center;
-    padding: 5px 0;
-    margin: 0 -30px;
+    width: auto;
   }
 }
 @media (max-width: 500px) {
-  header h1 {
+  nav .top h1 {
     font-size: 3rem;
     margin: 5px 0;
   }
 }
-header nav {
+nav .top .nav-items {
   display: flex;
   align-items: center;
 }
 @media (max-width: 500px) {
-  header nav {
-    padding-top: 5px;
+  nav .top .nav-items {
+    padding: 5px 0 0 20px;
+    justify-content: space-between;
   }
 }
-header nav a {
+nav .top .nav-items a {
   text-decoration: none;
   color: inherit;
   font-size: 1.5rem;
   padding-right: 40px;
 }
-@media (max-width: 500px) {
-  header nav a {
-    padding-right: 30px;
-  }
-}
-header nav a:hover {
+nav .top .nav-items a:hover {
   color: #008080;
   transition: 0.2s ease-in;
 }
