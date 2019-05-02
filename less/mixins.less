@@ -1,11 +1,16 @@
 // Mixins in here
 .button-signup() {
   padding: 1rem 5rem;
-  background: @button-bg;
+  background: @button-bg-desktop;
   border-radius: 10px;
   color: @button-font;
   border: none;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
+  @media @mobile {
+    padding: 1rem 12rem;
+    background: @button-bg;
+  }
 }
